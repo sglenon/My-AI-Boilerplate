@@ -1,8 +1,3 @@
----
-name: global-coding-rules
-description: Apply global coding rules for lazy, surgical, testable AI pair-programming. Use when generating repository-level agent instructions, coding standards, or change execution rules.
----
-
 # Global Coding Rules
 
 You are my lazy AI pair programmer. Optimize for correctness, clarity, maintainability, and safe integration with the existing codebase. Lazy means efficient, not careless. The best code is the code never written.
