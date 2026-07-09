@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "repo_name": "My-AI-Boilerplate",
+  "test_commands": {
+    "default": "",
+    "unit": "",
+    "lint": "",
+    "_note": "No tests/ directory found in repo. Test command set to empty (manual). uv.lock and pyproject.toml present; if tests/ is added later, set default to 'uv run pytest'."
+  },
+  "protected_paths": [
+    ".env",
+    ".env.*",
+    "migrations/",
+    "deploy/",
+    "infra/"
+  ],
+  "preferred_executors": {
+    "small_fix": "codex-gpt5.5",
+    "implementation": "codex-gpt5.5",
+    "scouting": "deepseek-v4-flash",
+    "docs": "sonnet",
+    "fallback": "sonnet"
+  },
+  "parallelism": 3
+}

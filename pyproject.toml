@@ -1,0 +1,10 @@
+[project]
+name = "my-ai-boilerplate"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langsmith>=0.8.11",
+    "mcp[cli]>=1.27.2",
+]

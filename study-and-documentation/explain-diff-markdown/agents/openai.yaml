@@ -1,0 +1,4 @@
+interface:
+  display_name: "Explain Diff as Markdown"
+  short_description: "Build a rich Notion code-change guide"
+  default_prompt: "Use $explain-diff-markdown to explain the current branch changes in a new Notion page."
