@@ -216,7 +216,7 @@ def cmd_install_repo(args) -> int:
                 "small_fix": "codex-gpt5.5",
                 "implementation": "codex-gpt5.5",
                 "scouting": "deepseek-v4-flash",
-                "docs": "sonnet",
+                "docs": "codex-gpt5.5",
                 "fallback": "sonnet",
             },
             "parallelism": 3,

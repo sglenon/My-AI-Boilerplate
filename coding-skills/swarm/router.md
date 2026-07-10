@@ -27,6 +27,7 @@ DeepSeek routes to `opencode/deepseek-v4-flash-free` via opencode CLI.
 - Medium-to-large refactors
 - Contained edits with predictable scope
 - Repetitive mechanical changes
+- Docs, prose, consistency, and UI-copy tasks (default; sonnet by explicit override for quality, or if codex unavailable)
 
 ### Use DeepSeek v4 Flash via opencode for:
 - Read-only scouting (default, write NOT allowed)
@@ -38,10 +39,9 @@ DeepSeek routes to `opencode/deepseek-v4-flash-free` via opencode CLI.
 - Performance investigation ideas
 
 ### Use Sonnet (claude -p) for:
-- Claude-native file edits using Claude Code tools
-- Docs and repo-specific consistency tasks
-- UI polish
-- Fallback executor when codex/opencode unavailable
+- **Last-resort fallback:** when codex (gpt-5.5) AND opencode/deepseek are both unavailable
+- **Claude Code native tool use:** when a task genuinely requires Claude Code's native file/tool access
+- **Explicit override:** docs/UI-polish tasks where quality is prioritized over cost (human or planner must explicitly override to sonnet; codex is the default for docs)
 
 ---
 
@@ -81,7 +81,7 @@ When a reviewer returns NEEDS_FIXES:
 | Single-file, obvious fix | codex (gpt-5.5) |
 | Multi-file, scoped | codex (gpt-5.5) |
 | Read-only investigation | deepseek via opencode |
-| Docs / prose / consistency | sonnet |
+| Docs / prose / consistency | codex (gpt-5.5) — sonnet by explicit override for quality, or if codex unavailable |
 | Architecture / review / diagnosis | master (opus) |
 
 ---

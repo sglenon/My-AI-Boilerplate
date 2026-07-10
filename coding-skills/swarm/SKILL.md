@@ -45,7 +45,7 @@ Activate with `/swarm <task description>`.
 |---|---|---|
 | `codex-gpt5.5` | `codex exec -m gpt-5.5` | normal implementation, multi-file changes, bug fixes, refactors requiring stronger reasoning, backend/API changes, test repair |
 | `deepseek-v4-flash` | `opencode run -m opencode/deepseek-v4-flash-free` | read-only scouting, grep-heavy exploration, second opinions, alternative plans, performance ideas |
-| `sonnet` | `claude -p` (non-interactive print mode) | Claude-native file edits, docs/consistency tasks, UI polish, fallback executor |
+| `sonnet` | `claude -p` (non-interactive print mode) | Fallback executor — used when codex and deepseek are both unavailable, when a task genuinely requires Claude Code native tool use, or by explicit override for docs/UI-polish tasks where quality is prioritized over cost. |
 | `opus/master` | master agent (planner/reviewer only) | architecture, task decomposition, routing, root-cause diagnosis, final review, merge decision |
 
 **Disabled/unavailable aliases (do not use):**
