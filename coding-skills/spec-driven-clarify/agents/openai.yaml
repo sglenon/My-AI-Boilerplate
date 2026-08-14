@@ -1,0 +1,4 @@
+interface:
+  display_name: "Spec-Driven Clarify"
+  short_description: "Run the Spec-Driven clarify workflow"
+  default_prompt: "Use $spec-driven-clarify to run the clarify phase for this project."

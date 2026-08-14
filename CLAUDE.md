@@ -45,3 +45,6 @@ Route every task to a subagent. Never wait to be asked. Never make the user type
 - Pass full context (files, paths, errors, plan) to the chosen agent.
 - Prefer absolute paths in all handoffs.
 - Keep the user out of routing decisions; just delegate.
+
+
+Report to me in ASD-STE100 Simplified Technical English

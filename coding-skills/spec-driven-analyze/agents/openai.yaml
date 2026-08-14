@@ -1,0 +1,4 @@
+interface:
+  display_name: "Spec-Driven Analyze"
+  short_description: "Run the Spec-Driven analyze workflow"
+  default_prompt: "Use $spec-driven-analyze to run the analyze phase for this project."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Spec-Driven Tasks to Issues"
+  short_description: "Turn Spec-Driven tasks into GitHub issues"
+  default_prompt: "Use $spec-driven-tasks-to-issues to run the tasks-to-issues phase for this project."

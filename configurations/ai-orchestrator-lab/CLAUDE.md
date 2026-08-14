@@ -50,3 +50,6 @@ All agents follow the Global Coding Rules defined in `configurations/global-codi
 - Pass full context (files, paths, errors, plan) to the chosen agent.
 - Prefer absolute paths in all handoffs.
 - Keep the user out of routing decisions; just delegate.
+
+
+Report to me in ASD-STE100 Simplified Technical English

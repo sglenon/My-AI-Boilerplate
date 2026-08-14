@@ -1,0 +1,4 @@
+interface:
+  display_name: "Spec-Driven Specify"
+  short_description: "Run the Spec-Driven specify workflow"
+  default_prompt: "Use $spec-driven-specify to run the specify phase for this project."

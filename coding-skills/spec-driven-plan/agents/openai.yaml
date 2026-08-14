@@ -1,0 +1,4 @@
+interface:
+  display_name: "Spec-Driven Plan"
+  short_description: "Run the Spec-Driven plan workflow"
+  default_prompt: "Use $spec-driven-plan to run the plan phase for this project."

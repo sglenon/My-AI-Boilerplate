@@ -1,0 +1,4 @@
+interface:
+  display_name: "Spec-Driven Converge"
+  short_description: "Run the Spec-Driven converge workflow"
+  default_prompt: "Use $spec-driven-converge to run the converge phase for this project."

@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "integration_state_schema": 1,
+  "installed_integrations": [
+    "spec-driven"
+  ],
+  "integration_settings": {
+    "spec-driven": {
+      "script": "py",
+      "invoke_separator": "-"
+    }
+  },
+  "integration": "spec-driven",
+  "default_integration": "spec-driven"
+}

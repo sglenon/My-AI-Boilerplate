@@ -1,0 +1,4 @@
+interface:
+  display_name: "Spec-Driven Init"
+  short_description: "Run the Spec-Driven init workflow"
+  default_prompt: "Use $spec-driven-init to run the init phase for this project."

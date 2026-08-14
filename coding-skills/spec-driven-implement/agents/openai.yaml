@@ -1,0 +1,4 @@
+interface:
+  display_name: "Spec-Driven Implement"
+  short_description: "Run the Spec-Driven implement workflow"
+  default_prompt: "Use $spec-driven-implement to run the implement phase for this project."

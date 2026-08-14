@@ -1,0 +1,4 @@
+interface:
+  display_name: "Spec-Driven Checklist"
+  short_description: "Run the Spec-Driven checklist workflow"
+  default_prompt: "Use $spec-driven-checklist to run the checklist phase for this project."

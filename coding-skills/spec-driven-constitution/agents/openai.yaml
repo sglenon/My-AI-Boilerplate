@@ -1,0 +1,4 @@
+interface:
+  display_name: "Spec-Driven Constitution"
+  short_description: "Run the Spec-Driven constitution workflow"
+  default_prompt: "Use $spec-driven-constitution to run the constitution phase for this project."

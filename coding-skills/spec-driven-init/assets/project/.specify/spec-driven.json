@@ -1,0 +1,9 @@
+{
+  "distribution": "Spec-Driven",
+  "runtime_version": "1.0.0",
+  "source": {
+    "project": "github/spec-kit",
+    "version": "0.16.3",
+    "license": "MIT"
+  }
+}

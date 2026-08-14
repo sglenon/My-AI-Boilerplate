@@ -1,0 +1,4 @@
+interface:
+  display_name: "Spec-Driven Tasks"
+  short_description: "Run the Spec-Driven tasks workflow"
+  default_prompt: "Use $spec-driven-tasks to run the tasks phase for this project."
