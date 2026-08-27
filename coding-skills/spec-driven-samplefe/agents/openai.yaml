@@ -1,0 +1,4 @@
+interface:
+  display_name: "Spec-Driven Sample FE"
+  short_description: "Build UX-first frontend samples from specs"
+  default_prompt: "Use $spec-driven-samplefe to turn the active product spec into an interactive frontend sample with mock data."
