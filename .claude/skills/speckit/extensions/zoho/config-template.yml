@@ -1,0 +1,25 @@
+# Zoho Projects Extension Configuration
+# Copied to .specify/extensions/zoho/zoho-config.yml on install
+
+# Default Zoho portal slug or ID.
+# Leave empty to resolve from the active ticket at run time.
+# Example: "mycompany"
+default_portal: ""
+
+# Default Zoho project ID or name.
+# Leave empty to resolve from the active ticket at run time.
+# Example: "123456789"
+default_project: ""
+
+# Default task list name to file subtasks under.
+# Leave empty to use the project's default task list.
+# Example: "Backlog"
+default_tasklist: ""
+
+# Auto-push tasks to Zoho after speckit-tasks completes.
+# MUST remain false (opt-in only) — the human-gating rule requires
+# explicit confirmation before any Zoho write operation. Changing this
+# to true does NOT bypass the confirmation step in speckit-zoho-push-tasks;
+# it only controls whether the hook fires automatically. The skill itself
+# always asks for "yes"/"y" before creating any task.
+auto_push_after_tasks: false

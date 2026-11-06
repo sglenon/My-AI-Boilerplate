@@ -1,0 +1,58 @@
+schema_version: "1.0"
+
+extension:
+  id: zoho
+  name: "Zoho Projects Integration"
+  version: "1.0.0"
+  description: "Pull ticket descriptions from Zoho Projects before specifying, and push generated tasks back as Zoho subtasks after task generation"
+  author: spec-kit-core
+  repository: https://github.com/github/spec-kit
+  license: MIT
+
+requires:
+  speckit_version: ">=0.2.0"
+  tools:
+    # These are read/write MCP tools already connected in the session.
+    # They are not scripts to install — the Zoho Projects MCP must be
+    # active in the Claude Code session for these commands to work.
+    - name: mcp__claude_ai_Zoho_Projects__get_issue
+      required: true
+    - name: mcp__claude_ai_Zoho_Projects__get_task_details
+      required: true
+    - name: mcp__claude_ai_Zoho_Projects__create_a_task
+      required: true
+    - name: mcp__claude_ai_Zoho_Projects__get_tasks_by_project
+      required: true
+
+provides:
+  commands:
+    - name: speckit.zoho.pull
+      file: commands/speckit.zoho.pull.md
+      description: "Pull ticket title and description from Zoho Projects to seed speckit-specify"
+    - name: speckit.zoho.push-tasks
+      file: commands/speckit.zoho.push-tasks.md
+      description: "Create Zoho subtasks from the active feature's tasks.md (human-gated)"
+
+  config:
+    - name: "zoho-config.yml"
+      template: "config-template.yml"
+      description: "Zoho Projects extension configuration"
+      required: false
+
+hooks:
+  before_specify:
+    command: speckit.zoho.pull
+    optional: true
+    prompt: "Pull ticket description from Zoho before writing the spec?"
+    description: "Fetch Zoho ticket title and description to seed the specification"
+  after_tasks:
+    command: speckit.zoho.push-tasks
+    optional: true
+    prompt: "Create Zoho subtasks from tasks.md for this ticket?"
+    description: "Push generated task rows to Zoho Projects as subtasks (human-gated)"
+
+tags:
+  - "integration"
+  - "zoho"
+  - "tickets"
+  - "workflow"
